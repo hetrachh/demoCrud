@@ -22,14 +22,15 @@ class EmployeeController extends Controller
         $employees->Name = $request->input('name');
         $employees->EmailId = $request->input('email');
         $employees->ContactNumber = $request->input('phno');
-        $employees->save();
-        
-        return redirect('/')->with('info','Employee Saved!!');
+         $employees->save();
+
+        return response()->json($employees);
+        //return redirect('/')->with('info','Employee Saved!!');
     }
     public function update($id)
-    {   
+    {
         $Employee = Employee::find($id);
-     
+
         return view('update',['Employee'=>$Employee ]);
     }
     public function edit(request $request,$id)
@@ -38,7 +39,7 @@ class EmployeeController extends Controller
             'EmailId' => $request->input('email'),
             'ContactNumber' => $request->input('phno')
         );
-        
+
         Employee::where('id',$id)->update($data);
 
         return redirect('/')->with('info','Employee Updated!!');
