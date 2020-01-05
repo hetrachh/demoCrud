@@ -92,14 +92,21 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,$id)
     {
         //update product
-        $product = Product::find($id);
-        $product->product_name = $request->name;
-        $product->product_desc = $request->desc;
-        $product->product_price = $request->price;
-        $product_save = $product->save();
+        // $product = Product::find($id);
+        // $product->product_name = $request->name;
+        // $product->product_desc = $request->desc;
+        // $product->product_price = $request->price;
+        // $product_save = $product->save();
+        echo $request->input('name');
+        $data = array(
+            'product_name' => $request->name,
+            'product_desc' => $request->desc,
+            'product_price' => $request->price
+        );
+        $product_save = Product::where('id',$id)->update($data);
 
         if($product_save)
         {
