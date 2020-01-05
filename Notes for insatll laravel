@@ -1,0 +1,28 @@
+Possible missing firmware /lib/firmware/i915/kbl_guc_ver9_14.bin for module i915
+
+
+sudo service apache2 restart
+
+
+Download Xampp from website
+sudo chmod 755 xampp-linux-x64-7.3.13-0-installer.run
+sudo ./xampp-linux-x64-7.3.13-0-installer.run
+
+sudo gedit /etc/environment
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/lampp/bin/php"
+
+sudo ln -s /opt/lampp/bin/php /usr/local/bin/php
+sudo /opt/lampp/lampp start
+sudo apt-get insatll curl
+curl -s https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+
+composer create-project --prefer-dist laravel/laravel HelloWorld
+
+
+to ADD lARAVEL TO PATH
+nano .bashrc
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+source ~/.bashrc --> relode the path
+ 
+opt/lampp
