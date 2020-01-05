@@ -13,8 +13,8 @@ class EmployeeController extends Controller
     public function home()
     {
         $employee =  Employee::all();
-        return response()->json($employee);
-        //return view('home',['employee'=>$employee]);
+        //return response()->json($employee);
+        return view('home',['employee'=>$employee]);
     }
     public function add(Request $request)
     {
