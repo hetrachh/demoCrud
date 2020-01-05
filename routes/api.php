@@ -17,8 +17,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+//Employee Routes
 Route::post('/insert','EmployeeController@add');
 Route::get('/getdata','EmployeeController@home');
 Route::post('/editdata/{id}','EmployeeController@edit');
 Route::get('deletedata/{id}','EmployeeController@Delete_Data');
 Route::get('getdata/{id}','EmployeeController@getDataById');
+
+//Products Route
+Route::resource('/products','ProductController');
