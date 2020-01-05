@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\APIHelpers;
+use App\Http\Requests\SaveProductRequest;
 use Illuminate\Http\Request;
 use App\Product;
 class ProductController extends Controller
@@ -38,7 +39,7 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SaveProductRequest $request)
     {
         //to save products
         $product = new Product;
