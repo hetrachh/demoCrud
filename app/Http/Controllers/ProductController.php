@@ -18,7 +18,6 @@ class ProductController extends Controller
         //fetch all data
         echo 'All Products';
         $products = Product::all();
-//        return $products;
         $response = APIHelpers::createAPIResponse(false,200,'',$products);
         return  response()->json($response,200);
     }
