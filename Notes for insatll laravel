@@ -55,3 +55,14 @@ Get Ui from https://github.com/swagger-api/swagger-ui
 and past the content of dist folder into laravel's public folder
 
 
+
+
+
+/*Rules and Zirkot and CodeSniffers Links*/
+https://www.google.com/search?ei=Dv0SXr3YNNHZz7sP3LGvwAE&q=zircote%2Fswagger-php+laravel&oq=zircote+swagger+php+&gs_l=psy-ab.3.2.0j0i22i30l9.1264653.1270461..1275668...0.4..0.160.1317.0j10......0....1..gws-wiz.......0i71j0i273j0i131j0i67j0i10.kS6PFhjVDYw
+https://github.com/zircote/swagger-php
+https://github.com/zircote/swagger-php/blob/master/docs/Getting-started.md
+https://github.com/swagger-api/swagger-ui
+https://phpmd.org/rules/index.html
+https://github.com/squizlabs/PHP_CodeSniffer
+https://www.google.com/search?q=php+md&oq=php+md&aqs=chrome..69i57j0l4j69i60l3.2034j0j7&sourceid=chrome&ie=UTF-8
