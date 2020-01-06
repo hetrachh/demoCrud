@@ -1,4 +1,15 @@
 <?php
+/**
+ * @SWG\Get(
+ *   path="/products",
+ *   summary="Producte",
+ *   @SWG\Response(response=200, description="successful operation")
+ * )
+ *
+ * Display a listing of the resource.
+ *
+ * @return \Illuminate\Http\Response
+ */
 
 namespace App\Http\Controllers;
 
@@ -6,6 +17,7 @@ use App\Helpers\APIHelpers;
 use App\Http\Requests\SaveProductRequest;
 use Illuminate\Http\Request;
 use App\Product;
+
 class ProductController extends Controller
 {
     /**

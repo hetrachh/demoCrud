@@ -3,12 +3,12 @@
 namespace  App\Helpers;
 
 class APIHelpers {
-    //we can call function with creating instance of this function
+    //we can call function without creating instance of this function
     public static function  createAPIResponse($is_error, $code,$message,$content){
-//            $is_error -> is for error of success response
-//            $code -> return code of error
-//            $message  -> return error msg
-//            $content -> data
+        //            $is_error -> is for error of success response
+        //            $code -> return code of error
+        //            $message  -> return error msg
+        //            $content -> data
         $result = [];
 
         if($is_error){
@@ -26,9 +26,7 @@ class APIHelpers {
                 $result['data'] =$content;
             }
         }
-
         return $result;
-
     }
 }
 ?>

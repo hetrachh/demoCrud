@@ -26,3 +26,32 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 source ~/.bashrc --> relode the path
  
 opt/lampp
+
+
+
+
+/*Coding Standards*/
+PSR 2 and 12
+https://blog.sideci.com/5-php-coding-standards-you-will-love-and-how-to-use-them-adf6a4855696
+
+
+
+implementation of laravel swagger 
+/*Links*/
+http://blogs.quovantis.com/swagger-integration-with-laravel/
+https://www.google.com/search?ei=ztASXon_CaDSz7sP05iK4AM&q=swagger+api+implementation+in+laravel&oq=swagger+api+implementation+in+lara&gs_l=psy-ab.3.0.33i22i29i30.138967.163663..168341...8.2..0.234.5600.0j31j3......0....1..gws-wiz.......0i71j0i67j0j0i22i30j0i22i10i30j0i273j0i13j0i13i30j0i8i13i30.j6bPJxFwTPM
+https://codeburst.io/generate-beautiful-restful-laravel-api-documentation-with-swagger-a9df486e0368
+
+/*Steps*/
+composer require darkaonline/l5-swagger
+php artisan list
+php artisan vendor:publish
+
+
+
+/*Zarkot swagger */
+install zarkot ui
+Get Ui from https://github.com/swagger-api/swagger-ui
+and past the content of dist folder into laravel's public folder
+
+
