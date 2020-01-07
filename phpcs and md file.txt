@@ -1,0 +1,50 @@
+composer require --dev squizlabs/php_codesniffer
+
+phpcs.xml
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+    <description>The coding standard for our project.</description>
+    <rule ref="PSR2"/>
+
+    <file>app</file>
+    <file>bootstrap</file>
+    <file>config</file>
+    <file>database</file>
+    <file>resources</file>
+    <file>routes</file>
+    <file>tests</file>
+
+    <exclude-pattern>bootstrap/cache/*</exclude-pattern>
+    <exclude-pattern>bootstrap/autoload.php</exclude-pattern>
+    <exclude-pattern>*/migrations/*</exclude-pattern>
+    <exclude-pattern>*/seeds/*</exclude-pattern>
+    <exclude-pattern>*.blade.php</exclude-pattern>
+    <exclude-pattern>*.js</exclude-pattern>
+
+    <!-- Show progression -->
+    <arg value="p"/>
+</ruleset>
+
+
+
+./vendor/bin/phpcs
+
+Automatic slove Error
+./vendor/bin/phpcbf 
+
+
+vendor/bin/phpmd app html cleancode,codesize,controversial,design,naming,unusedcode > phpmd.html
+
+now goto the phpmd.html file to check errors
+
+
+
+
+
+
+https://winnietech.com/quick-check-of-your-laravel-project-using-php-mess-detector/
+https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-16-04
+https://cylab.be/blog/22/using-php-codesniffer-in-a-laravel-project
+https://blog.programster.org/getting-started-with-php-codesniffer
+https://phpmd.org/rules/cleancode.html#staticaccess
+https://www.php-fig.org/psr/psr-2/
