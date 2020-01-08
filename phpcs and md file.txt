@@ -48,3 +48,16 @@ https://cylab.be/blog/22/using-php-codesniffer-in-a-laravel-project
 https://blog.programster.org/getting-started-with-php-codesniffer
 https://phpmd.org/rules/cleancode.html#staticaccess
 https://www.php-fig.org/psr/psr-2/
+
+
+
+
+
+
+
+
+https://www.w3resource.com/php/function-reference/array_diff_key.php
+https://www.w3resource.com/php/function-reference/function-reference.php
+https://www.w3resource.com/php/function-reference/is_numeric.php
+https://www.w3schools.com/php/php_form_validation.asp
+https://www.tutorialspoint.com/php/php_validation_example.htm
